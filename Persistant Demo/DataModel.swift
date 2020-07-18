@@ -33,7 +33,7 @@ class UserSettings: ObservableObject {
       }
   }
     
-    public var ringtones = ["Chimes", "Signal", "Waves"]
+   let ringtones = ["Chimes", "Signal", "Waves"]
     
     init() {
         self.username = UserDefaults.standard.object(forKey: "username") as? String ?? ""
