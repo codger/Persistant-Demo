@@ -45,7 +45,7 @@ class UserSettings: ObservableObject {
   func incrementCounter()  {
     self.counter += 1
   }
-  func deccrementCounter()  {
+  func decrementCounter()  {
     self.counter -= 1
   }
 }
