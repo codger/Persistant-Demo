@@ -12,6 +12,7 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView {
+   
       Form {
         Section(header: Text("PROFILE")) {
           TextField("Username", text: $userSettings.username)
@@ -39,6 +40,7 @@ struct ContentView: View {
           }.padding()
           .buttonStyle(FilledButton())
         }
+        NavigationLink("Hello Star", destination: HelloStarWorld())
       }
       .navigationBarTitle("Settings")
     }
